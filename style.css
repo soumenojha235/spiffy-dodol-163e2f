@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Rounddisplay=swap');
+body{
+    background-color: rgb(235, 206, 210);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu',sans-sarif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(162, 57, 236);
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img {
+    width: 100px;
+    padding: 0 6px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    min-height: 70vh;
+   background-image: rgba(0, 0, 0, 0.782);
+   color: white;
+   font-family: 'Varela Round', sans-sarif; 
+   display: flex;
+   width: 70%;
+   margin: 23px auto;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url(bg.gif);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: transparent;
+    
+    color: whitesmoke;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+    
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width:"500px"){
+    body{
+        background-color: red;
+    }
+}
